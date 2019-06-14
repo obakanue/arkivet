@@ -14,10 +14,21 @@ html, body, app-root {
         color: white;
         text-transform: uppercase;
     } 
+
+    h2 { 
+        font-family: 'Open Sans', sans-serif; 
+        font-size: 20px; 
+        font-style: normal; 
+        font-variant: normal; 
+        font-weight: 400; 
+        line-height: 3  0px; 
+        color: white;
+        text-transform: uppercase;
+    } 
     
     h3 { 
         font-family: 'Open Sans', sans-serif;
-        font-size: 14px; 
+        font-size: 15px; 
         font-style: normal; 
         font-variant: normal; 
         font-weight: bold; 
