@@ -1,1 +1,60 @@
 /* You can add global styles to this file, and also import other style files */
+html, body, app-root {
+    height: 100%;
+    margin: 0;
+    }
+
+    h1 { 
+        font-family: 'Open Sans', sans-serif; 
+        font-size: 25px; 
+        font-style: normal; 
+        font-variant: normal; 
+        font-weight: 400; 
+        line-height: 3  0px; 
+        color: white;
+        text-transform: uppercase;
+    } 
+    
+    h3 { 
+        font-family: 'Open Sans', sans-serif;
+        font-size: 14px; 
+        font-style: normal; 
+        font-variant: normal; 
+        font-weight: bold; 
+        line-height: 15px;
+        color: white;
+        text-transform: uppercase;
+    } 
+    
+    p { 
+        font-family: 'Open Sans', sans-serif;
+        font-size: 14px; 
+        font-style: normal; 
+        font-variant: normal; 
+        font-weight: 400; 
+        line-height: 20px;
+        color: white;
+        text-transform: uppercase;
+    } 
+        
+    blockquote { 
+        font-family: 'Open Sans', sans-serif;
+        font-size: 21px; 
+        font-style: normal; 
+        font-variant: normal; 
+        font-weight: 400; 
+        line-height: 30px;
+        color: white;
+        text-transform: uppercase;
+    } 
+            
+    pre { 
+        font-family: 'Open Sans', sans-serif;
+        font-size: 13px; 
+        font-style: normal; 
+        font-variant: normal; 
+        font-weight: 400; 
+        line-height: 18px;
+        color: white;
+        text-transform: uppercase;
+    }
