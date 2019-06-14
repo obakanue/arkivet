@@ -1,6 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+// used to create fake backend
+import { fakeBackendProvider } from './_helpers';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -20,7 +23,10 @@ import { FrontPageComponent } from './components/front-page/front-page.component
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+     // provider used to create fake backend
+     fakeBackendProvider
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
