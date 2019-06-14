@@ -24,17 +24,6 @@
       position: relative;
   }
 
-  .overlay {
-    display: inline-block;
-    color: white;
-    background-color: rgba(0,0,0,0.8);
-    padding: 10px;
-    border-radius: 10%;
-    position: absolute;
-    bottom: 20px;
-    left: 20px
-  }
-
   .logo {
     position: absolute;
     display: block;

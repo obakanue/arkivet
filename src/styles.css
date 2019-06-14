@@ -58,3 +58,38 @@ html, body, app-root {
         color: white;
         text-transform: uppercase;
     }
+
+    .middle-footer {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 12px; 
+        font-style: normal; 
+        font-variant: normal; 
+        font-weight: 400; 
+        line-height: 18px;
+        color: white;
+        text-transform: uppercase;
+        display: block;
+        text-align:center;
+        margin-left: 200px;
+        margin-top: 710px;
+        position: absolute;
+    }
+
+    .side-footer {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 10px; 
+        font-style: normal; 
+        font-variant: normal; 
+        font-weight: 400; 
+        line-height: 18px;
+        color: white;
+        text-transform: uppercase;
+        display: block;
+        position: absolute;
+        margin-left: -300px;
+        margin-top: 720px;
+    }
+
+    .container-div {   
+        position: relative;
+    }

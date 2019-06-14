@@ -1,0 +1,35 @@
+/* unvisited link */
+a:link {
+    color: #5888AE;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: grey;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: white;
+  }
+  
+  /* selected link */
+  a:active {
+    color: #5888AE;
+  }
+
+  .footer {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 400; 
+    line-height: 18px;
+    color: white;
+    text-transform: uppercase;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align:center;
+    margin-top: 40%;
+}
