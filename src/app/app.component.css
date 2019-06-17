@@ -28,13 +28,13 @@
     position: absolute;
     display: block;
     left: 420px;
-    top: -30px;
+    top: 10px;
   }
 
   .semi-transparent-container {
       display:inline-block;
       left: 420px;
-      top: 200px;
+      top: 300px;
       position: absolute;
       text-align: center;
       width: 40%;

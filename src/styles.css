@@ -82,7 +82,7 @@ html, body, app-root {
         display: block;
         text-align:center;
         margin-left: 200px;
-        margin-top: 710px;
+        margin-top: 770px;
         position: absolute;
     }
 
@@ -98,7 +98,7 @@ html, body, app-root {
         display: block;
         position: absolute;
         margin-left: -300px;
-        margin-top: 720px;
+        margin-top: 785px;
     }
 
     .container-div {   

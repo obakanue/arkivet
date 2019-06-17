@@ -6,4 +6,10 @@
         line-height: 20px;
         color: white;
         text-transform: uppercase;
+        text-align: left;
+}
+
+.center-login {
+    text-align: center;
+   vertical-align: text-top;
 }
