@@ -1,5 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
-html, body, app-root {
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+
+html, body, app-root{
     height: 100%;
     margin: 0;
     }
@@ -10,7 +12,7 @@ html, body, app-root {
         font-style: normal; 
         font-variant: normal; 
         font-weight: 400; 
-        line-height: 3  0px; 
+        line-height: 30px;
         color: white;
         text-transform: uppercase;
     } 
@@ -21,7 +23,7 @@ html, body, app-root {
         font-style: normal; 
         font-variant: normal; 
         font-weight: 400; 
-        line-height: 3  0px; 
+        line-height: 30px;
         color: white;
         text-transform: uppercase;
     } 
