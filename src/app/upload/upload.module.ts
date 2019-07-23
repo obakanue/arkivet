@@ -10,9 +10,11 @@ import {
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {FlexLayoutModule} from '@angular/flex-layout';
 import {HttpClientModule} from '@angular/common/http';
+import {DialogComponent} from './dialog/dialog.component';
+import {UploadService} from './upload.service';
 
 @NgModule({
-  declarations: [UploadComponent],
+  declarations: [UploadComponent, DialogComponent],
   imports: [
     CommonModule,
     MatButtonModule,
@@ -23,7 +25,9 @@ import {HttpClientModule} from '@angular/common/http';
     BrowserAnimationsModule,
     MatProgressBarModule
   ],
-  exports: [UploadComponent]
+  exports: [UploadComponent],
+  entryComponents: [DialogComponent],
+  providers: [UploadService]
 
 })
-class UploadModule { }
+export class UploadModule { }
