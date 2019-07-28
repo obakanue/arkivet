@@ -6,7 +6,7 @@
   multiple
 />
 <div class="container" fxLayout="column" fxLayoutAlign="space-evenly stretch">
-  <h1 mat-dialog-title>Upload Files</h1>
+  <h1 mat-dialog-title>Lägg till fil</h1>
   <div>
     <button
       [disabled]="uploading || uploadSuccessful"
@@ -15,7 +15,7 @@
       class="add-files-btn"
       (click)="addFiles()"
     >
-      Add Files
+      Lägg till fil
     </button>
   </div>
 
@@ -35,7 +35,7 @@
 
   <!-- This are the actions of the dialog, containing the primary and the cancel button-->
   <mat-dialog-actions class="actions">
-    <button *ngIf="showCancelButton" mat-button mat-dialog-close>Cancel</button>
+    <button *ngIf="showCancelButton" mat-button mat-dialog-close>Avbryt</button>
     <button
       mat-raised-button
       color="primary"

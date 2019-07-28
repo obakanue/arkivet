@@ -15,7 +15,7 @@ export class DialogComponent {
               public uploadService: UploadService) {}
   progress
   canBeClosed = true
-  primaryButtonText = 'Upload'
+  primaryButtonText = 'Ladda upp'
   showCancelButton = true
   uploading = false
   uploadSuccessful = false
@@ -43,7 +43,7 @@ export class DialogComponent {
     for (let key in this.progress) {
       allProgressObservables.push(this.progress[key].progress);
     }
-    this.primaryButtonText = 'Finish';
+    this.primaryButtonText = 'Stäng';
     this.canBeClosed = false;
     this.dialogRef.disableClose = true;
     this.showCancelButton = false;
