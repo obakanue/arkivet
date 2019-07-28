@@ -39,7 +39,7 @@ export class DialogComponent {
     }
     this.uploading = true;
     this.progress = this.uploadService.upload(this.files);
-    let allProgressObservables = [];
+    const allProgressObservables = [];
     for (let key in this.progress) {
       allProgressObservables.push(this.progress[key].progress);
     }

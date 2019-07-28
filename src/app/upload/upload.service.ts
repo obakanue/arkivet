@@ -25,19 +25,18 @@ export class UploadService {
       // keeps track of progress of upload
       const progress = new Subject<number>();
       this.http.request(req).subscribe(event => {
-      if (event.type === HttpEventType.UploadProgress) {
-        const percentDone = Math.round(100 * event.loaded / event.total);
-        progress.next(percentDone);
-      } else if (event instanceof HttpResponse){
-        progress.complete();
-      }
-    });
+        if (event.type === HttpEventType.UploadProgress) {
+          const percentDone = Math.round(100 * event.loaded / event.total);
+          progress.next(percentDone);
+        } else if (event instanceof HttpResponse) {
+          progress.complete();
+        }
+      });
       status[file.name] = {
       progress: progress.asObservable()
     };
-  })
+    })
     return status;
   }
-
 }
 
