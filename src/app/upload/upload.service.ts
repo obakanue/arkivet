@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpRequest, HttpEventType, HttpResponse} from '@angular/common/http';
-import { Subject, Observable } from 'rxjs';
+import { Subject, Observable, throwError } from 'rxjs';
+import { retry, catchError} from 'rxjs/operators';
 
 
 const url = 'http://localhost:8000/api/upload'
@@ -29,7 +30,7 @@ export class UploadService {
         if (event.type === HttpEventType.UploadProgress) {
           const percentDone = Math.round(100 * event.loaded / event.total);
           progress.next(percentDone);
-        } else if (event instanceof HttpResponse) {
+        } else if (event.type === HttpEventType.Response) {
           progress.complete();
         }
       });
@@ -38,6 +39,10 @@ export class UploadService {
     };
     })
     return status;
+  }
+
+  handleError(error){
+
   }
 }
 

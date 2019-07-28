@@ -47,13 +47,11 @@ export class DialogComponent {
     this.canBeClosed = false;
     this.dialogRef.disableClose = true;
     this.showCancelButton = false;
-    forkJoin(allProgressObservables).subscribe(end => {
+    forkJoin(allProgressObservables).subscribe(() => {
       this.canBeClosed = true;
       this.dialogRef.disableClose = false;
       this.uploadSuccessful = true;
       this.uploading = false;
     });
-
   }
-
 }
